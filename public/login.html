@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StockMaster - Iniciar Sesión</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <div id="notification-container" class="notification-container"></div>
+
+  <div class="login-container">
+    <div class="login-card">
+      
+    <div class="login-header">
+        <div class="brand-logo-container" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+          <div class="brand-icon" style="margin: 0;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20 7.25H4m16 4.75H4m16 4.75H4M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            </svg>
+          </div>
+       <div class="brand-text" style="display: flex; flex-direction: column; text-align: left;">
+          <h1 style="font-size: 1.5rem; font-weight: 800; color: var(--text-main); letter-spacing: -0.025rem; margin: 0; line-height: 1.1;">StockMaster</h1>
+         <span style="font-size: 0.82rem; color: var(--text-muted); font-weight: 500; margin-top: 3px;">Gestión de Activos</span>
+        </div>
+        </div>
+        <p>Introduce tus credenciales para ingresar al almacén</p>
+      </div>
+
+      <form id="login-form" novalidate>
+        
+        <div class="form-group">
+          <label for="usuario">Usuario</label>
+          <div class="input-wrapper">
+            <input type="text" id="usuario" name="usuario" placeholder="Ej. admin" autocomplete="off" required>
+            <span class="validation-message" id="error-usuario"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <div class="input-wrapper password-toggle-wrapper">
+            <input type="password" id="password" name="password" placeholder="••••••••" required style="padding-right: 2.75rem;">
+            <button type="button" id="toggle-password-btn" class="toggle-password-btn" title="Mostrar/Ocultar contraseña" aria-label="Mostrar u ocultar contraseña">
+              <svg class="eye-open-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              </svg>
+              <svg class="eye-close-icon hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12c1.391 4.178 5.326 7.178 9.963 7.178 2.052 0 3.968-.595 5.584-1.624M3.98 8.223 18.412 22.84M3.98 8.223a10.477 10.477 0 0 1 1.933-2.179M18.412 22.84l4.218 4.217M18.412 22.84a10.476 10.476 0 0 0 3.555-5.326c1.391-4.178 5.326-7.178 9.963-7.178a10.477 10.477 0 0 0-1.933-2.179M12 5.25c1.26 0 2.457.221 3.555.624m-1.72 1.719a3 3 0 0 0-4.242 4.242M10.474 10.474a3 3 0 0 0 4.242 4.242M3 3l18 18" />
+              </svg>
+            </button>
+            <span class="validation-message" id="error-password"></span>
+          </div>
+        </div>
+
+        <div class="form-actions" style="margin-top: 2rem;">
+          <button type="submit" id="login-btn" class="btn btn-primary" style="width: 100%; justify-content: center; border-radius: 50px; padding: 0.75rem;">
+            <span id="login-btn-text">Ingresar al Almacén</span>
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>

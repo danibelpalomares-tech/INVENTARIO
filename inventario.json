@@ -1,0 +1,63 @@
+{
+  "productos": [
+    {
+      "id": "mq4euq68cc845",
+      "nombre": "Laptos DELL",
+      "categoria": "tecnologia-electronica",
+      "cantidad": 10,
+      "precio": 320
+    },
+    {
+      "id": "mq4f1b5ylcb4k",
+      "nombre": "Mesas",
+      "categoria": "mobiliario-Oficina",
+      "cantidad": 5,
+      "precio": 80
+    },
+    {
+      "id": "mq4f3xwfej0a3",
+      "nombre": "Martillos",
+      "categoria": "herramientas",
+      "cantidad": 10,
+      "precio": 40
+    },
+    {
+      "id": "mq4f5b4ojh092",
+      "nombre": "Resma de Papel",
+      "categoria": "papeleria",
+      "cantidad": 6,
+      "precio": 25
+    },
+    {
+      "id": "mq4f5rpy3s9xi",
+      "nombre": "Harina PAN",
+      "categoria": "alimentos",
+      "cantidad": 8,
+      "precio": 2
+    },
+    {
+      "id": "mq4f6rspg6jc3",
+      "nombre": "Zapatos",
+      "categoria": "otros",
+      "cantidad": 12,
+      "precio": 15
+    },
+    {
+      "id": "mq57fmz6dkr33",
+      "nombre": "Laptos",
+      "categoria": "tecnologia-electronica",
+      "cantidad": 10,
+      "precio": 230
+    }
+  ],
+  "historialVentas": [
+    {
+      "idVenta": "vnt-8GCO7WV",
+      "productoId": "mq4euq68cc845",
+      "productoNombre": "Laptos DELL",
+      "cantidadVendida": 2,
+      "totalPagado": 640,
+      "fecha": "17/6/2026"
+    }
+  ]
+}
